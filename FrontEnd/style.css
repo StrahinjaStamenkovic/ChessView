@@ -1,0 +1,213 @@
+.chessHeader{
+
+    text-align: center;
+    font-size: 75px;
+    border-bottom: thin solid black;
+    
+    
+}
+
+
+.GameAndInfo{
+    display: flex;
+    flex-direction: row; 
+    align-self: center;
+    align-items: center;
+    justify-content:space-around;
+    height:100%;
+    flex-wrap: wrap;
+}
+
+.PlayerPictures{
+    
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 0;
+    flex-basis: 0;
+   
+}
+
+.ChessBoardAndControls{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display:flex;
+    flex-direction: column;
+    flex-basis: 1;
+    /*justify-content: space-between;*/
+    flex-grow: 1;
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column; /**/
+    min-height: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: sans-serif;
+    justify-content: center;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+}
+footer {
+    clear: both;
+    position: relative;
+    /*flex:0 1 20px;*/
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width: 100%;
+    /* margin-top: -200px; */
+}
+.Info, .ControlButtons{
+    display: flex;
+    /*width: 100%;*/
+    justify-content: space-evenly;
+    /*flex:1 0 auto;*/
+    margin: 10px;
+    
+}
+.Info{
+
+    /*flex: 1 0 auto;*/
+    min-width: 600px;
+    width:600px;
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.InfoDiv{
+    min-width: 600px;
+    width:600px;
+}
+.ControlButtons{
+    transform:translateX(4%);
+}
+button{
+    font-size: 20px;
+    width: 80px;
+    height:40px;
+}
+.ButtonsCell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;/**/
+    flex-grow: 1;
+    width:100%;
+    height:100%;
+}
+.InfoCellPre{
+    max-width: 600px;
+}
+.WhitePlayerImage,.BlackPlayerImage{
+    
+    min-width: 110px;
+    min-height: 150px;
+    max-width: 110px;
+    max-height: 150px;
+    align-self: center;
+}
+.WhitePlayer,.BlackPlayer,.Archive{
+    display: flex;
+    flex-direction: column;
+
+}
+.PlayerNameLabel{
+    text-align: center;
+    align-self: center;   
+}
+
+.GamesArchive {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width:80%;
+    align-self:center;
+}
+ .GamesArchive thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.GamesArchive th,.GamesArchive td {
+    padding: 12px 15px;
+    width: 100px;
+}
+.GamesArchive tbody tr {
+    border-bottom: thin solid #dddddd;
+    text-align: left;
+}
+.GamesArchive tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.GamesArchive tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.GamesArchive tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.Input{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.PlayerInput{
+    display:flex;
+    flex-direction: column;
+    justify-content:right;
+}
+.PlayersInput{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.PGNInput{
+    align-self: center;
+   
+}
+.PGNInputField{
+     min-width: 350px;
+    min-height: 350px;
+}
+.InputButton{
+    align-self: center;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
+}
+
+
+
+.ChessBoardTable { border-spacing: 0; border-collapse: collapse; }
+.ChessBoardTable th { padding: .5em; }
+.ChessBoardTable th + th { border-bottom: thin solid #000; }
+.ChessBoardTable th:first-child,
+.ChessBoardTable td:last-child { border-right: thin solid #000; }
+.ChessBoardTable tr:last-child td { border-bottom: thin solid; }
+.ChessBoardTable th:empty { border: none; }
+.ChessBoardTable td { width: 1.5em; height: 1.5em; text-align: center; font-size: 50px; line-height: 0;}
+.ChessBoardTable .WhiteField { background: white; }
+.ChessBoardTable .BlackField { background: #009879; }
+
+.ArchiveContainer{
+    display: flex;
+    justify-content: center;
+}
